@@ -1,4 +1,4 @@
-![SPS](insert GitHub link with screenshot of Portfolio page - Header/nav)
+![SPS]
 
 
 # SPS
