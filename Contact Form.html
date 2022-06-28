@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> <!--Same as Portfolio-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ContactForm.css"> <!--CONTACT CSS STYLE SHEET-->
+<script src="script.js" defer></script> <!--JS FOR NAV BAR and POP UP-->
+
+<title>Contact me</title> <!--23 June Added Title to Head-->
+</head>
+<body>
+
+  <header class="header"> <!--Amended, added header as there were 2 x head -->
+    <!--NEW NAV TEST 22/6-->
+    <nav class="navbar">
+      <div class="the-title title-push">SPS
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li> <a href="Portfolio.html">Portfolio</a> </li>
+          <li> <a href="Contact Form.html">Contact</a> </li>
+          <li> <a href="https://www.instagram.com/">Instagram</a> </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    
+    <!--NEW NAV TEST 22/6 ENDDDDDDDDDDDDD-->
+
+    <!--EDIT 23 JUNE REMOVED SECOND BODY TAG AS THERE SHOULD ONLY BE ONE-->
+
+
+ 
+ <h1 class = "contact-title">Let's Start a Conversation</h1>
+
+
+ <!--------------------------------------------CONTACT FORM STARTS HERE-->
+  <!--added "p" details -->
+  <!--edited class field to contactBox-->
+  <!-- <div class="contactContainer"> -->
+  <fieldset class="contactBox">
+    <p class="para1">Send me a message and I'll get back to you within 2 working days.</p>
+    <p class="para2">Please note: all fields are required.</p>
+
+   <form name="myForm" action="SubmitThankYou.html" method="get">
+    <label for="fname">Full name:</label>
+    <input type="fname" id="fname" name="fname" placeholder="Your name here"><br><br>
+    <label for="cname">Company name:</label>
+    <input type="cname" id="cname" name="cname" placeholder="Your company name here"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your email address here"><br><br>
+    <label for="phone">Phone number:</label>
+    <input type="phone" id="phone" name="phone" placeholder="Your phone number here"><br><br>
+
+     <!--Amended, added "p" details -->
+     <div class="paragraphPhoneAddress">
+    <p class="para3">Phone:</p>
+    <p class="para4"><a href = tel:+447909090909>(+44) 079 090 90909</p></a>
+    <p class="para5">Address:</p>
+    <p class="para6"><a href="AddressMap.html">London EC3N 4AB</p></a>
+         <!--26 June 2022, added email address -->
+    <p class="para5">Email:</p>
+    <p class="para6"><a href = "mailto:photography@SPS.com">photography@SPS.com</p></a> 
+  </div>
+
+       <div class="text">
+        <label for="Message" class="text">Your message:</label>
+        <div class="text">
+            <textarea  class="text" placeholder = "Start typing your message here..." name="Message"  rows="6" maxlength="3000" required></textarea>
+        </div>
+    <div class="form">
+
+      <!--amended button-->
+        <button id="submitForm" href = "SubmitThankYou.html"><strong>Send message</strong></button>
+
+         <!--added checkbox and script,-->
+          <!--24 june moved script to javascript file,-->
+          
+
+         <form>
+          <div>
+              <label><input type="checkbox" required> I agree to receive marketing updates</label>
+          </div>
+        </form>
+
+  <!--amended-->      
+</fieldset>
+  </form>
+<!-- </div> -->
+
+ <!--------------------------------------CONTACT FORM ENDS HERE-->
+
+
+
+<!--FOOTER STARTS HERE
+
+
+-->
+
+  <form id="emailform">
+    <footer id="the-footer">
+        
+      
+      <!-- Form -->
+    <p id="footer-title"><strong>Subscribe to my newsletter</strong></p>
+    <p id="footer-subtitle"> Monthly photography tips and offers</p>
+    <!-- <form id="emailform"> -->
+      <label>Email address:</label>
+      <input type="email" name="email" id="emailBox" placeholder="email@address.com"/>
+      <button id="submitFooter" onclick="myFunction()"><strong>Submit</strong></button>
+      <p id="copyright"> Copyright SPS © 2022<p> 
+  
+      <!-- </form> -->
+      <!-- Social links-->
+      <p><a href="https://www.twitter.com/" target="_blank">
+        <img id="Twitter" height="35" alt="Twitter icon" src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Twitter_svg-1024.png"> 
+      </a> </p>
+    
+        <p><a href="https://www.facebook.com/" target="_blank">      
+        <img id="Facebook" height="35" alt="Facebook icon" src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Facebook_glyph_svg-1024.png">
+      </a></p>
+  <!-- Copyright -->
+  
+    </footer>
+  </form>
+  
+      
+  </body>
+  </html>

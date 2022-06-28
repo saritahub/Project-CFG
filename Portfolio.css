@@ -1,0 +1,443 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; 
+  padding: 0;
+
+  font-family:sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  text-align: left; 
+  
+}
+
+
+/*  SPS LOGO in contact page is SMALLER, SOMETHING IN THIS CSS SHEET(??) AS THE PORTFOLIO ONE WORKS!  */
+/* SPS LOGO ANIMATION START */ 
+
+@-webkit-keyframes title-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes title-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+.the-title {
+  font-size: 2.5rem;
+  margin: .5rem;
+  /* ---- ADDING SAME COLOUR AS TRAVEL PHOTOGRAPHY  */
+  font-family: sans-serif;
+  font-size: 45px;
+  font-weight: 800;
+  color: white;
+  border: 5px;
+  border-radius: 30%;
+  background-color: royalblue;
+  font-style: oblique;
+  padding: 5px 10px 5px 10px;
+  /* border: 2px solid red; */
+
+}
+
+.the-title:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  font-size: 50px;
+  cursor:default;
+}
+
+
+
+/* PUSH TEST FOR SPS LOGO */
+.title-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.title-push:hover, .title-push:focus, .title-push:active {
+  -webkit-animation-name: title-push;
+  animation-name: title-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+/* END OF TITLE PUSH TEST */
+
+/* NAV BAR */
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  height: 80px;
+  /* border: 2px solid red; */
+
+
+}
+
+.navbar-links {
+  height: 100%;
+  font-size: 20px;
+  /* border: 2px solid red; */
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: royalblue; /* CHANGE THIS */
+  opacity: 0.75;
+  font-size: 22px;
+  font-variant: small-caps;
+  border-radius: 50%;
+  font-weight: bolder;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: midnightblue;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+      background-color: white;
+  }
+
+  .navbar-links li:hover {
+    background-color: white; /* CHANGE THIS */
+    opacity: 0.75;
+    font-size: 22px;
+    font-variant: small-caps;
+    border-radius: 50%;
+    font-weight: bolder;
+
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      /* padding: .5rem 1rem; */
+      background-color: lightgray;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+
+  /*end of nav bar media */
+
+  /* SPS Logo decrease font size */
+
+  .the-title {
+    font-size: 30px;
+  }
+
+  .the-title:hover {
+    font-size: 50px;
+    margin: .5rem;
+    /* ---- ADDING SAME COLOUR AS TRAVEL PHOTOGRAPHY  */
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    color: white;
+    border: 5px;
+    border-radius: 30%;
+    background-color: royalblue;
+    font-style: oblique;
+
+  }
+
+  /* 23 June TO-DO Move title slightly lower so it doesn't clash with the nav bar hamburger)
+  
+  .travel {
+    position: relative;
+    padding-right: 0px;
+  } */
+
+}
+
+/* END OF NEW NAV 23/6 */
+ 
+
+
+
+
+/* 22 June CONTACT TITLE HOW TO GET IN TOUCH, same as Sandra's code for the portfolio title */
+/*----------------------------------------------header starts here */
+
+.travel { /*Amended a to travel, as the a was conflicting with other code, move underneath nav bar*/
+  
+  font-family: sans-serif;
+  font-size: 70px;
+  font-weight: 800;
+  color: royalblue;
+ 
+  padding-top: 30px;
+  margin-top: 10px;
+  /* border: 2px solid red; */
+  
+  
+/* Moving text to center - need to amend */
+/* height: 1.23em;
+width: 500px;
+position: absolute;
+left: 35%;
+margin-right: -50%;
+translate: translate(-50%, -50%); */
+/* added below properties instead of above */
+display:flex;
+justify-content: center;
+
+
+
+  /* Same as before */
+  background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+
+  /* Same as before */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+
+  /* Same as before */
+  transition: background-position 275ms ease;
+}
+.travel:hover {
+  background-position: 0 100%;
+}
+
+
+
+/* -------------------------Images start here */
+
+/* div {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+} */
+
+img {
+  display: inline-block;
+  margin: 30px 20px; /* Change this to fit all images */
+}
+
+/*22juneP hover complete*/
+img:hover {
+  transform: scale(1.4);
+  border-style:outset;
+  border-color: silver;
+  }
+
+.row1 {
+  Display:flex;
+  flex-wrap: wrap;
+  flex-direction:row; 
+  justify-content: center;
+  }
+
+  .row2 {
+    Display : flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction:row; 
+    justify-content: center;
+    }
+    
+    .row3 {
+      Display : flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex-direction:row; 
+      justify-content: center;
+      }
+      
+
+      .row4 {
+        Display : flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction:row; 
+        justify-content: center;
+        }
+        
+.row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+ 
+
+  /* ------------------------ FOOTER STARTS HERE 
+  
+  Outer container = emailform
+ */ 
+  
+  /** FOOTER NOTES 22 JUNE 
+  1.Media query for mobile version */
+
+    #the-footer {
+      background-color: rgb(240, 240, 240);
+      height: 95px;
+      width: 100%;
+      position: relative;
+     border-style: solid;
+     border: 0px;
+      /* border-color: red;  */
+      /* > Add padding? */
+  }
+  
+  #footer-title {
+      text-align: center;
+      font-size: 20px;
+      color:rgb(9, 17, 102);
+      /* font-weight: 900; */
+  /*  */
+  }
+  
+  #footer-subtitle {
+      text-align: center;
+      font-size: 15px;
+      color:rgb(9, 17, 102);
+  
+  }
+  
+  #emailform {
+      text-align: center;
+      font-size: 12px;
+      color:rgb(9, 17, 102);
+      background-color: rgb(240, 240, 240);
+      /* border-style: solid; 
+       border-color: orange;  */
+      padding: 20px 10px 40px 10px;
+  
+  }
+  
+  /*26 June amended submit button styling*/
+  #submitFooter {
+    background: linear-gradient(to bottom left, royalblue 100%, midnightblue 100%);
+    border: none;
+    color: black;
+    padding: 5px 5px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 35%;
+    box-shadow: 0 5px #999;
+    position: relative;
+    bottom: 4px;
+    /* button size amend - contact form only */
+    height: 33px;
+    width: auto;
+
+}
+
+#submitFooter:hover {
+  background: linear-gradient(to bottom left,  white 40%, midnightblue 100%);
+  cursor: pointer;
+}
+
+#submitFooter:active {
+    background-color: rgb(176, 169, 169);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);  
+}
+  
+  #copyright {
+      font-size: 12px;
+      color:rgb(9, 17, 102);
+       /* position: absolute; */
+      bottom: -50px;
+      position:absolute;
+     
+  }
+
+  
+  #Twitter {
+      position: absolute;
+      bottom: -65px;
+      right: -18px;  
+        
+
+  }
+  
+  #Facebook {
+      position: absolute;
+      bottom: -65px;
+      right: 27px;
+      }
